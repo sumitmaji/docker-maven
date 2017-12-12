@@ -3,7 +3,7 @@ MAINTAINER Sumit Kumar Maji
 
 WORKDIR /usr/local
 ARG REPOSITORY_HOST
-RUN wget "$REPOSITORY_HOST"/repository/files/apache-maven-3.3.9-bin.tar.gz &&\
+RUN wget "$REPOSITORY_HOST"/repo/apache-maven-3.3.9-bin.tar.gz &&\
 tar -xzvf /usr/local/apache-maven-3.3.9-bin.tar.gz &&\
 mv /usr/local/apache-maven-3.3.9 /usr/local/maven &&\
 rm -rf /usr/local/apache-maven-3.3.9-bin.tar.gz
